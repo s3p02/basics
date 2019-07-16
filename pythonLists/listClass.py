@@ -14,3 +14,8 @@ class lb:
 			print("Duplicates Exist\n")
 		else:
 			print("No Duplicates\n")
+
+	def removeDuplicates(self):
+		lbSet = set(self.inputList)
+		self.inputList.clear()
+		self.inputList = list(lbSet)
