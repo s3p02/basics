@@ -3,8 +3,11 @@ class lb:
 		self.inputList = inputList
 	
 	def printList(self):
-		for i in self.inputList:
-			print(i)
+		print("___________________________")
+		print("index\t:\telement")
+		print("___________________________")
+		for i in range(len(self.inputList)):
+			print(str(i)+"\t:\t"+self.inputList[i])
 	def add2list(self,additionalElement):
 		self.inputList.append(additionalElement)
 
@@ -19,3 +22,7 @@ class lb:
 		lbSet = set(self.inputList)
 		del self.inputList[:]
 		self.inputList = list(lbSet)
+
+	def removeElement(self,element2remove):
+		#Removes first match
+		self.inputList.remove(element2remove)
