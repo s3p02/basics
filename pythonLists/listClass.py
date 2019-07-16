@@ -26,3 +26,6 @@ class lb:
 	def removeElement(self,element2remove):
 		#Removes first match
 		self.inputList.remove(element2remove)
+
+	def removeIndex(self,indexNo):
+		del self.inputList[indexNo]
