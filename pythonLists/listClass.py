@@ -10,7 +10,7 @@ class lb:
 
 	def checkForDuplicates(self):
 		listSet = set(self.inputList)
-		if(len(listSet) == len(self.inputList)):
+		if(len(listSet) != len(self.inputList)):
 			print("Duplicates Exist\n")
 		else:
 			print("No Duplicates\n")
