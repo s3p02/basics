@@ -17,5 +17,5 @@ class lb:
 
 	def removeDuplicates(self):
 		lbSet = set(self.inputList)
-		self.inputList.clear()
+		del self.inputList[:]
 		self.inputList = list(lbSet)
