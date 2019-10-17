@@ -10,3 +10,4 @@ if __name__ == "__main__":
     Node.traverse(node1)
     print("\nSecond Traversal\n")
     Node.traverse(node1)
+    print("SUM: "+str(Node.traverseReturnSum(node1)))

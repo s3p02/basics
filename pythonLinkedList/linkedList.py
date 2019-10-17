@@ -10,3 +10,10 @@ class Node:
             print("Node Value : "+str(node.val))
             node = node.next
             print("Node-Count: "+str(nodeCount))
+    def traverseReturnSum(self):
+        node = self
+        sum = 0
+        while node != None:
+            sum += node.val
+            node = node.next
+        return sum
