@@ -1,13 +1,13 @@
 from linkedList import *
+import random
+import time
 
 if __name__ == "__main__":
-    node1 = Node(2)
-    node2 = Node(4)
-    node3 = Node(3)
-    node1.next = node2
-    node2.next = node3
-    print("\nFirst Traversal\n")
-    Node.traverse(node1)
-    print("\nSecond Traversal\n")
-    Node.traverse(node1)
-    print("SUM: "+str(Node.traverseReturnSum(node1)))
+    ll = linkedList()
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert(2)
+    ll.traverse()
+    #https://www.codefellows.org/blog/implementing-a-singly-linked-list-in-python/
+    #https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/
+    #https://medium.com/@kojinoshiba/data-structures-in-python-series-1-linked-lists-d9f848537b4d
